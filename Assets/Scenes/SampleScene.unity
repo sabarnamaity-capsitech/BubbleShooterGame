@@ -314,7 +314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &415741295
 Transform:
   m_ObjectHideFlags: 0
@@ -327,8 +327,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1993635302}
+  m_Children: []
   m_Father: {fileID: 711221197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
@@ -641,6 +640,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1993635302}
   - {fileID: 415741295}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -697,14 +697,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86edb25eab3dbf54ea8bb3610f2fba13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pivot: {fileID: 415741295}
   shootPoint: {fileID: 1993635302}
   lineRenderer: {fileID: 711221201}
   maxDistance: 20
   collisionMask:
     serializedVersion: 2
-    m_Bits: 72
-  reflections: 2
+    m_Bits: 8
+  reflections: 1
 --- !u!120 &711221201
 LineRenderer:
   serializedVersion: 2
@@ -1714,11 +1713,11 @@ Transform:
   m_GameObject: {fileID: 1993635301}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.79999995, z: 0}
+  m_LocalPosition: {x: 0, y: 0.50000006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 415741295}
+  m_Father: {fileID: 711221197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class BubbleAimController : MonoBehaviour
 {
-    public Transform pivot;
+    //public Transform pivot;
     public Transform shootPoint;
     public LineRenderer lineRenderer;
 
     public float maxDistance = 20f;
     public LayerMask collisionMask;
-    public int reflections = 2;
+    public int reflections = 1;
 
     Camera cam;
 
@@ -34,13 +34,16 @@ public class BubbleAimController : MonoBehaviour
 
         mouse.z = 0;
 
-        Vector2 dir = mouse - pivot.position;
+        //Vector2 dir = mouse - pivot.position;
+        Vector2 dir = mouse - shootPoint.position;
 
         float angle =
             Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
-        pivot.rotation =
-            Quaternion.Euler(0, 0, angle - 90f);
+        //pivot.rotation =
+        //    Quaternion.Euler(0, 0, angle - 90f);
+        shootPoint.rotation =
+          Quaternion.Euler(0, 0, angle - 90f);
     }
 
     // ---------------- PREDICTION ----------------
